@@ -27,6 +27,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -99,11 +100,12 @@ public class EasyActivity extends AppCompatActivity {
         StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                     @Override
                    public void onResponse(String response) {
-//                        try {
-//                            JSONObject
-//
-//                        }
-//                        catch (JSONException e){}
+                       try {
+                        JSONObject jsonObject = new JSONObject(response);
+                           JSONArray jsonArray = jsonObject.getJSONArray()
+
+                    }
+                       catch (JSONException e){}
 
                     }
                 }, new Response.ErrorListener() {
