@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button5"
+        android:layout_width="200dp"
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+       android:textColor="@color/orange"
+       android:background="@drawable/background"
+        android:text="Play"
+        android:onClick="play"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        android:text="options"
+        android:onClick="level"
+        android:id="@+id/level"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:fontFamily="@font/alegreya_sc_bold"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button5"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/help"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:text="Help"
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="@+id/level"
+        app:layout_constraintStart_toStartOf="@+id/level"
+        app:layout_constraintTop_toBottomOf="@+id/level"></androidx.appcompat.widget.AppCompatButton>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        android:text="Exit"
+        android:textSize="20sp"
+        android:onClick="Exit"
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="@+id/help"
+        app:layout_constraintStart_toStartOf="@+id/help"
+        app:layout_constraintTop_toBottomOf="@+id/help"></androidx.appcompat.widget.AppCompatButton>
+</androidx.constraintlayout.widget.ConstraintLayout>

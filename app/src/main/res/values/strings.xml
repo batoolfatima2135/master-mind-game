@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MasterMind</string>
+    <string name="helper_text_name">Your Name</string>
+    <string name="helper_text_username">Username must be unique</string>
+    <string name="helper_text_age">Age must be 2 digit long</string>
+    <string name="age_error">Age can not be more than 2 digits</string>
+    <string name="title_activity_level">LevelActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="helpmsg">
+        Master mind is a game which keep test to your mind.It is useful to improve the student’s vocabulary and reading skills.
+         Words are in jumble format which we need to re-arranged in order to score best.
+    </string>
+    <string name="helpmsg2">
+      Here we have three levels in this game are easy, medium, and hard. These levels are based on time.
+
+    </string>
+    <string name="easy">
+        	Easy: Time provided is 2 minute.
+    </string>
+    <string name="medium">
+        	Medium: Time provided is 1 minute.
+    </string>
+    <string name="hard">
+            Hard: Time provided is 30 seconds.
+    </string>
+</resources>

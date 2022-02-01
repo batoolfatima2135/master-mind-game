@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".RegisterActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:textColorHint="@color/yellow"
+        android:backgroundTint="@color/orange"
+        app:boxStrokeColor="@color/yellow"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:counterTextColor="@color/yellow"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/yellow"
+        app:errorEnabled="true"
+        app:helperText="@string/helper_text_name"
+        app:helperTextEnabled="true"
+        app:helperTextTextAppearance="@font/alegreya_sc_bold"
+        app:helperTextTextColor="@color/yellow"
+        app:hintTextColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="80dp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+
+            android:fontFamily="@font/alegreya_sc_bold"
+            android:hint="Name"
+            android:inputType="textFilter|textCapWords"
+            android:textColor="@color/yellow"
+            android:textColorHint="@color/yellow"
+            android:textSize="30dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/yellow"
+        android:weightSum="2"
+        app:boxStrokeColor="@color/yellow"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:counterTextColor="@color/yellow"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/yellow"
+        app:errorEnabled="true"
+        app:helperText="@string/helper_text_username"
+        app:helperTextEnabled="true"
+        app:helperTextTextAppearance="@font/alegreya_sc_bold"
+        app:helperTextTextColor="@color/yellow"
+        app:hintTextColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="80dp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+            android:fontFamily="@font/alegreya_sc_bold"
+            android:hint="Username"
+            android:inputType="textFilter"
+            android:textColor="@color/yellow"
+            android:textColorHint="@color/yellow"
+            android:textSize="30dp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/age"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/yellow"
+        app:boxStrokeColor="@color/yellow"
+        app:counterEnabled="true"
+        app:counterMaxLength="2"
+        app:counterOverflowTextColor="@color/error"
+
+        app:counterTextAppearance="@string/age_error"
+        app:counterTextColor="@color/yellow"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/yellow"
+        app:errorEnabled="true"
+        app:helperText="@string/helper_text_age"
+        app:helperTextEnabled="true"
+        app:helperTextTextAppearance="@font/alegreya_sc_bold"
+        app:helperTextTextColor="@color/yellow"
+        app:hintTextColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/agetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="80dp"
+
+            android:fontFamily="@font/alegreya_sc_bold"
+            android:hint="Age"
+            android:inputType="number"
+            android:textColor="@color/yellow"
+            android:textColorHint="@color/yellow"
+            android:textSize="30dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:onClick="AddUser"
+        android:text="Continue"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/age"
+        app:layout_constraintStart_toStartOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:onClick="back"
+        android:text="Back"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/yellow"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+</androidx.constraintlayout.widget.ConstraintLayout>

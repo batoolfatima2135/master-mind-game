@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".EasyActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/help"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginBottom="24dp"
+
+        android:background="@drawable/testingshadow"
+        android:src="@drawable/ic_baseline_help_outline_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    " />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/testingshadow"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:text="Button"
+
+        app:layout_constraintBottom_toBottomOf="@+id/help"
+        app:layout_constraintEnd_toStartOf="@+id/help"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/exit"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/testingshadow"
+        android:src="@drawable/ic_baseline_exit_to_app_24"
+
+        app:layout_constraintBottom_toBottomOf="@+id/help"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/help"
+        app:layout_constraintTop_toTopOf="@+id/help" />
+
+    <TextView
+        android:id="@+id/timerlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:text="Timer : "
+        android:textColor="#FF8F00"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/timerlabel"
+        app:layout_constraintStart_toEndOf="@+id/timerlabel"
+        app:layout_constraintTop_toTopOf="@+id/timerlabel" />
+
+    <TextView
+        android:id="@+id/scorelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:text="score : "
+        android:textColor="#FF8F00"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/score"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/scorelabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scorelabel" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:text="Level : Medium "
+        android:textColor="#FF8F00"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/btn"
+        android:textAlignment="center"
+        app:boxStrokeColor="@color/yellow"
+        app:counterTextColor="@color/yellow"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/wordbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="80dp"
+            android:fontFamily="@font/alegreya_sc_bold"
+            android:inputType="textFilter|textCapWords"
+            android:textColor="@color/yellow"
+            android:textColorHint="@color/yellow"
+            android:textSize="30dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/block1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+
+        android:background="@drawable/background"
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:text="w"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/block2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/block2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/background"
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:text="l"
+
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/block1"
+        app:layout_constraintEnd_toStartOf="@+id/block3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/block1"
+        app:layout_constraintTop_toTopOf="@+id/block1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/block3"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:text="r"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/block2"
+
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/block2"
+        app:layout_constraintTop_toTopOf="@+id/block2" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/block5"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/background"
+
+        android:fontFamily="@font/alegreya_sc_bold"
+        android:text="o"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/block6"
+        app:layout_constraintStart_toStartOf="@+id/block1"
+        app:layout_constraintTop_toBottomOf="@+id/block1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/block6"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:fontFamily="@font/alegreya_sc_bold"
+
+        android:text="e"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/block5"
+        app:layout_constraintEnd_toStartOf="@+id/block7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/block5"
+        app:layout_constraintTop_toTopOf="@+id/block5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/block7"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:fontFamily="@font/alegreya_sc_bold"
+
+        android:text="f"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/block3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/block6"
+        app:layout_constraintTop_toTopOf="@+id/block6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
